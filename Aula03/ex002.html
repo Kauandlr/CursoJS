@@ -18,14 +18,23 @@
 </head>
 <body>
     <h1>Primeiro Evento</h1>
-    <div id="area" onclick="clicar()" oncli>
+    <div id="area" onclick="clicar()" onmouseenter="passar()" onmouseout="sair()">
         Interaja..
     </div>
 
     <script>
+        var a = window.document.getElementById('area')
         function clicar() {
-            var a = window.document.getElementById('area')
             a.innerText = 'Clicou'
+        }
+
+        function passar() {
+        
+            a.innerText = 'Olá'
+        }
+        function sair() {
+        
+            a.innerText = 'Sair'
         }
     </script>
 </body>
