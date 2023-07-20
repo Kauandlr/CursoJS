@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação</title>
+    <style>
+        body{
+            background-color: blue;
+            gap: 20px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coloque seu Número</h1>
+    <input type="number" id="num1" title="numero1">
+    <input type="number" id="num2" title="numero2">
+    <input type="button" id="sum" title="botao" onclick="sum()">
+    <div id="res">Resultado</div>
+    <script>
+        function sum(){
+            var soma1 = document.getElementById('num1')
+            var soma2 = document.getElementById('num2')
+            var res = document.getElementById ('res')
+            var n1 = Number(soma1.value)
+            var n2 = Number(soma2.value)
+            var result = n1 + n2
+            res.innerHTML = `A soma entre ${n1} + ${n2} deu ${result}`
+        }
+    </script>
+</body>
+</html>
