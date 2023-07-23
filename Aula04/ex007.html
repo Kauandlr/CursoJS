@@ -1,0 +1,27 @@
+<!--Fazer um ex sobre Em qual país mora-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País Residente</title>
+</head>
+<body>
+    <h1>Qual País Você mora?</h1>
+    <input type="text" id="país">
+    <input type="button" value="" id="botão" onclick="click()">
+    <div id="resultado">
+        País
+    </div>
+    
+
+    <script>
+        function click(){
+        var país = getelementbyid('país')
+        var resultado = getelementbyid('resultado')
+        resultado.innerHTML = `Sua velocidade é de ${país}`
+    }
+    </script>
+</body>
+</html>
