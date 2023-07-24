@@ -9,19 +9,22 @@
 </head>
 <body>
     <h1>Qual País Você mora?</h1>
-    <input type="text" id="país">
-    <input type="button" value="" id="botão" onclick="click()">
-    <div id="resultado">
-        País
-    </div>
+    Digite o país inde você nasceu: <input type="text" id="pais" name="pais">
+    <input type="button" value="click" onclick="origem()">
+    <div id="res">
     
-
     <script>
-        function click(){
-        var país = getelementbyid('país')
-        var resultado = getelementbyid('resultado')
-        resultado.innerHTML = `Sua velocidade é de ${país}`
-    }
+        function origem(){
+            var pais = document.getElementById('pais').value
+            res.innerHTML = `Você mora em ${pais}`
+            
+            if (pais == 'Brasil' || pais == 'brasil'){
+                res.innerHTML += ' Você é brasileiro'
+            } else {
+                res.innerHTML += ' Você é estrangeiro'
+            }
+        }
     </script>
 </body>
 </html>
+
